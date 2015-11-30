@@ -2,7 +2,7 @@
 namespace Minphp\Acl\Tests\Unit;
 
 use Minphp\Acl\Acl;
-use minphp\Record\Record;
+use Minphp\Record\Record;
 use PHPUnit_Framework_TestCase;
 use PDO;
 use Seedling\Fixture;
