@@ -6,7 +6,7 @@ php:
   - 5.6
   - 7.0
 before_script:
-  - composer install --dev
+  - composer install
 script:
   - ./vendor/bin/phpunit --coverage-text
   - ./vendor/bin/phpcs --extensions=php --report=summary --standard=PSR2 ./src ./tests
