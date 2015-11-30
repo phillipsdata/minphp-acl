@@ -3,10 +3,11 @@
     bootstrap="./vendor/autoload.php"
     backupGlobals="false"
     beStrictAboutTestsThatDoNotTestAnything="true"
+    checkForUnintentionallyCoveredCode="true"
     forceCoversAnnotation="true">
     <testsuites>
-        <testsuite name="Minphp/Acl">
-            <directory suffix="Test.php">tests/</directory>
+        <testsuite name="Integration">
+            <directory suffix="Test.php">tests/Integration</directory>
         </testsuite>
     </testsuites>
 
