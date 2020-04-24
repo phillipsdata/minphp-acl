@@ -400,10 +400,8 @@ class Acl
      */
     private function addAcl($aro_id, $aco_id, $action, $permission)
     {
-        $this->record->set('aro_id', $aro_id)
-            ->set('aco_id', $aco_id)
-            ->set('action', $action)
-            ->set('permission', $permission)
-            ->insert('acl_acl');
+        $vars = array('aro_id' => $aro_id, 'aco_id' => $aco_id, 'action' => $action, 'permission' => $permission);
+        $this->record->duplicate('permission', '=', $permission)
+            ->insert('acl_acl', $vars);
     }
 }
